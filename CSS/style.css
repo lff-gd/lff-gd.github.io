@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #006688;
+    z-index: 100;
+}
+
+body {
+    text-align: center;
+}
+
+hr {
+    display: block;
+    clear: both;
+    width: 80%;
+    height: 6px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    border: 0;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+p {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    background: #000000;
+    color: #00ccff;
+}
+
+.endpage {
+    margin-top: 5vh;
+    width: 100%;
+    height: 5vh;
+    background: #006688;
+}
+
+/*******************************************************
+* CLASES
+*******************************************************/
+.separator {
+    padding-top: 2vh;
+    height: 4vh;
+    background: #0f0f0f;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/*+++++++++++++++++++
+* NAVBAR
++++++++++++++++++++*/
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: block;
+    padding: 24px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    border-radius: 6px;
+    background: #ffffff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover {
+    background: #ffffff;
+    color: #006688;
+}
+
+.navbar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+/*+++++++++++++++++++
+* CONTENT: GLOOM REAPER
++++++++++++++++++++*/
+.content_gloom_reaper {
+    padding: 20vh 10vh 5vh 10vh;
+    height: auto;
+    background: #0f0f0f;
+    background-size: cover;
+}
+
+.content_blocks {
+    padding: 10vh 10vh 5vh 10vh;
+    height: auto;
+    background: #0f0f0f;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    color: #00ddff;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.box-text {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 4px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    background: #000000;
+}
+
+.box-text::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #000000;
+    transform-origin: center;
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: solid #000000;
+    background: #006688;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #006688;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.btn-link {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #00ccff;
+}
+
+.btn-container {
+    width: 16%;
+    margin-top: 2vh;
+    padding: 2vh;
+    border-radius: 4px;
+    text-align: center;
+    background: #000000;
+}
+
+/* Identificadores */
