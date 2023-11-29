@@ -10,7 +10,7 @@ parentContainers.forEach(container => {
             return;
         }
 
-        current.textContent = current.textContent.includes('Saber más') ? "Ocultar" : "Saber más";
+        current.textContent = current.textContent.includes('Ocultar') ? "Saber más" : "Ocultar";
 
         const currentBox = current.parentElement.childNodes[1];
         if (!currentBox) {
